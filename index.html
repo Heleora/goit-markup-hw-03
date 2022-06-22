@@ -14,19 +14,40 @@
 </head>
 <body>
 <header>
+    <div class="container page-header">
     <nav>
-        <a class="logo" href="./index.html"><span class="part">Web</span>Studio</a>
-        <ul>
-            <li><a class="navigate current" href="./index.html">Студия</a></li>
-            <li><a class="navigate" href="./portfolio.html">Портфолио</a></li>
-            <li><a class=" navigate" href="#">Контакты</a></li>
+        <ul class="main-nav">
+            <li><a class="logo" href="./index.html"><span class="part">Web</span>Studio</a></li>
+            <li class="nav-item"><a class="nav-link current" href="./index.html">Студия</a></li>
+            <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <ul class="nav-contact">
+        <li class="nav-contact-item"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="nav-contact-item"><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    </ul>
+    </div>
+</header>
+
+<!-- <header>
+    <div class="container page-header">
+    <nav class="main-nav">
+        <a class="logo" href="./index.html"><span class="part">Web</span>Studio</a></li>
+        <ul class="nav-list">
+            <li>
+            <li><a class="nav-item current" href="./index.html">Студия</a></li>
+            <li><a class="nav-item" href="./portfolio.html">Портфолио</a></li>
+            <li><a class=" nav-item" href="#">Контакты</a></li>
         </ul>
     </nav>
     <ul>
         <li><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
-</header>
+    </div>
+</header> -->
+
 <main>
        <!-- Герой -->
     <section class="hero section">
@@ -36,9 +57,9 @@
         </div>
     </section>
     <!-- Наши преимущества -->
-    <section class="section section-features">
+    <section class="section features">
         <div class="container">
-        <h2 class="title features">Преимущества</h2>
+        <h2 class="title features-title">Преимущества</h2>
         <ul>
             <li><h3 class="title features-item">Внимание к деталям</h3>
                 <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p> </li>
@@ -54,7 +75,7 @@
     <!-- Чем мы занимаемся -->
     <section class="section">
         <div class="container">
-        <h3 class="title cases">Чем мы занимаемся</h3>
+        <h3 class="title cases-title">Чем мы занимаемся</h3>
         <ul>
             <li><a href="#"><img src="./images/box1-1.jpg" alt="Эффективное программирование" width="370"></a></li>
             <li><a href="#"><img src="./images/box2-1.jpg" alt="Создание мобильных приложений" width="370"></a></li>
@@ -63,7 +84,7 @@
         </div>
     </section>
     <!-- Наша команда -->
-    <section class="team section">
+    <section class="section team">
         <div class="container">
         <h2 class="title team-title">Наша команда</h2>
         <ul>

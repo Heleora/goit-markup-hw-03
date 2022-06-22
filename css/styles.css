@@ -28,6 +28,9 @@ a {text-decoration: none;
     color: inherit;}
 button {cursor: pointer;}
 
+h1,h2,h3,h4,p {margin: 0 auto;}
+
+ul {margin: 0; padding: 0;}
 
 
 .title {color: var(--title-text-color);
@@ -38,8 +41,55 @@ button {cursor: pointer;}
     text-align: center;
     letter-spacing: 0.03em;}
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: aqua;
+}
+
+.section {padding: 94px 0;
+    outline: 1px solid red;
+}
 
 
+.hero {
+    color: var(--text-color-secondary);
+    background-color: var(--background-hero-footer);
+    text-align: center;
+
+    padding: 200px 0;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+    width: 696px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    color: inherit;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--accent-color-hover);
+}
+
+
+/* .title.features {visually-hidden} */
+.section-features {padding-bottom: 0;}
 .features-item {font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -84,26 +134,9 @@ header {background-color: var(--background-header);
 .logo .part {color: var(--accent-color);}
 
 
-
-.hero {color: var(--text-color-secondary);
-    background-color: var(--background-hero-footer);
-    text-align: center;}
-
-.hero-title {font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;}
-
-.hero-button {color: inherit; background-color: var(--accent-color);
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;}
-.hero-button:hover, .hero-button:focus {background-color: var(--accent-color-hover);} 
-
-
+.section.portfolio {padding: 0;
+margin-top: 126px;
+margin-bottom: 73px;}
 
 .filter {color: var(--title-text-color);
     background-color: var(--background-filter);
@@ -143,13 +176,5 @@ footer>.logo {color: var(--text-color-secondary);}
 .location {color: var(--text-color-secondary);}
 
 
-.container {width: 1200px;
-    margin: auto;
-    padding: 0 15px;
-    background-color: aqua;
-}
 
-.hero > .container {height: 600px;}
 
-h1, h2, h3, h4, p {margin: 0;}
-ul {margin: 0; padding: 0;}

@@ -15,6 +15,7 @@
     --background-team-card: #ffffff;
     --background-filter: #f5f4fa;
     --background-card: #ffffff;
+    --header-line: #ececec;
     
 }
 
@@ -35,6 +36,19 @@ button {cursor: pointer;}
 
 h1,h2,h3,h4,p {margin: 0 auto;}
 
+/* SECTIONS-CONTAINER */
+.section {
+    padding: 94px 0;
+    outline: 1px solid red;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: aqua;
+}
+
 /* HEADER */
 header {
     background-color: var(--background-header);
@@ -42,7 +56,18 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    border: 1px solid var(--header-line);
     }
+
+.container.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+    
+}
 
 .main-nav, .nav-contact {
     display: flex;
@@ -69,31 +94,13 @@ header {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 .logo .part {
     color: var(--accent-color);
 }
 
-/* SECTIONS-CONTAINER */
-.section {
-    padding: 94px 0;
-    outline: 1px solid red;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    background-color: aqua;
-}
-
-.container.page-header {
-    display:flex;
-    justify-content: space-between;
-
-}
 
 /* TITLES */
 .title {color: var(--title-text-color);
@@ -198,17 +205,29 @@ margin-bottom: 73px;}
 
 
 /* FOOTER */
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 footer {background-color: var(--background-hero-footer);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;}
 
-footer>.logo {color: var(--text-color-secondary);}
+.page-footer .logo {color: var(--text-color-secondary);
+display: inline-block;
+margin-bottom: 20px;}
 
 
 .mail {color: rgba(255,255,255,.6);
-    font-style: normal;}
+    font-style: normal;
+
+    margin-bottom: 9px;}
+
 .location {color: var(--text-color-secondary);}
+.footer-contact {display: block;}
+.footer-contact:not(:last-of-type) {margin-bottom: 9px;}
 
 
 

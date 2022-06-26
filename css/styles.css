@@ -64,14 +64,14 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    border: 1px solid var(--header-line);
+    padding: 24px 0;
+    border-bottom: 1px solid var(--header-line);
     }
 
 .container.page-header {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
 }
 
 .main-nav, .nav-contact {
@@ -158,6 +158,9 @@ header {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    padding: 10px 32px;
+    border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -178,7 +181,9 @@ header {
 .features-item-title {font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    }
     
 .features-text {font-size: 14px;
     line-height: 1.71;
@@ -259,25 +264,22 @@ justify-content: space-between;}
 .works-card-title {font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    text-align: center;
     margin-bottom: 4px;}
 
 .works-card-text {font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    text-align: center;}
+    }
 
 
 /* FOOTER */
-.page-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
 footer {background-color: var(--background-hero-footer);
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+
+    padding: 60px 0;}
 
 .page-footer .logo {color: var(--text-color-secondary);
 display: inline-block;
